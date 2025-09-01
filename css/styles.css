@@ -15,9 +15,18 @@ body {
 }
 
 .one-third.js-fullheight.order-md-last.img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
-  
+
+.one-third.js-fullheight.order-md-last.img .overlay {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
   .tech-stack {
     padding: 20px;
   }
