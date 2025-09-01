@@ -3,12 +3,6 @@
  	easing: 'slide'
  });
 
-$('.navbar-nav .nav-link').on('click', function() {
-    if ($(window).width() < 992) {
-        $('.navbar-collapse').collapse('hide');
-    }
-});
-
 (function($) {
 
 	"use strict";
