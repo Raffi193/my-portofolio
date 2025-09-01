@@ -5,9 +5,11 @@ body {
     background: #0d0d2b;
     color: white;
     text-align: ;
+    box-sizing: border-box;
   }
   
   .img {
+    //margin-top:60px;
     border-radius: 15px;
     overflow: hidden; /* Opsional: untuk memastikan konten tidak keluar dari border radius */
 }
