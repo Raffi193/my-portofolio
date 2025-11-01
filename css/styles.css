@@ -1,0 +1,451 @@
+		/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d2b;
+    color: white;
+    text-align: ;
+    box-sizing: border-box;
+  }
+  
+  .img {
+    //margin-top:60px;
+    border-radius: 15px;
+    overflow: hidden; /* Opsional: untuk memastikan konten tidak keluar dari border radius */
+}
+
+.one-third.js-fullheight.order-md-last.img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+  .tech-stack {
+    padding: 20px;
+  }
+  
+  .tech-stack h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    background: #1c1c3b;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  //
+  // footer
+/* Demo content */
+.demo-content {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+/* Footer Styles */
+
+
+/* ======================================= */
+/* 1. Pengaturan Container Utama Footer    */
+/* ======================================= */
+footer {
+    background-color: #1A1A2E; /* Sesuaikan dengan warna background gelap Anda */
+    color: #FFFFFF;
+    padding: 60px 0 20px 0; /* Memberi padding atas dan bawah */
+}
+
+.footer-container {
+    max-width: 1200px; /* Lebar maksimal konten footer */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding samping agar konten tidak menempel di tepi */
+}
+
+/* ======================================= */
+/* 2. Pengaturan Kolom (CSS Grid)          */
+/* ======================================= */
+.footer-grid {
+    display: grid;
+    /* Membuat 4 kolom dengan lebar yang kurang lebih sama */
+    /* 1.2fr: Kolom pertama (Tentang Saya) sedikit lebih lebar */
+    /* 1fr: Kolom sisanya memiliki lebar yang sama */
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr; 
+    gap: 30px; /* Jarak antar kolom */
+    margin-bottom: 40px; /* Jarak antara kolom atas dan footer-bottom */
+}
+
+/* ======================================= */
+/* 3. Styling Judul dan Teks               */
+/* ======================================= */
+.footer-section h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #CCCCCC;
+}
+
+/* ======================================= */
+/* 4. Styling Tautan (Navigasi & Layanan)  */
+/* ======================================= */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+.footer-section ul li a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Agar seluruh baris bisa diklik */
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+    color: #F96D00; /* Warna hover/aksen */
+}
+
+/* Icon chevron */
+.footer-section .fa-chevron-right {
+    font-size: 10px;
+    margin-right: 8px;
+    color: #F96D00; /* Warna aksen untuk ikon */
+}
+
+/* ======================================= */
+/* 5. Styling Kontak (Kolom Terakhir)      */
+/* ======================================= */
+.contact-info li {
+    display: flex; /* Untuk menyejajarkan ikon dan teks */
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.contact-info li i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #F96D00; /* Warna aksen untuk ikon kontak */
+}
+.contact-info li span, .contact-info li a {
+    color: #CCCCCC;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.contact-info li a:hover {
+    color: #F96D00;
+}
+
+/* ======================================= */
+/* 6. Styling Social Media Icons           */
+/* ======================================= */
+.social-links {
+    display: flex;
+    margin-top: 20px;
+}
+.social-links a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+.social-links a:hover {
+    background-color: #F96D00; /* Warna hover sesuai aksen */
+}
+
+/* ======================================= */
+/* 7. Footer Bottom (Copyright)            */
+/* ======================================= */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: #888888;
+}
+
+
+/* ======================================= */
+/* 8. Media Queries (Responsiveness)       */
+/* ======================================= */
+@media (max-width: 992px) {
+    .footer-grid {
+        /* Ubah menjadi 2 kolom untuk tablet */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        /* Ubah menjadi 1 kolom untuk ponsel */
+        grid-template-columns: 1fr; 
+    }
+    .footer-section {
+        margin-bottom: 30px; /* Tambahkan jarak antar section saat 1 kolom */
+    }
+}
+
+footer {
+  margin-top: 60px;
+  background: linear-gradient(135deg, 0%, #1e3c72 );
+  color: #ffffff;
+  padding: 60px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+
+  border-radius: 2px;
+}
+
+.footer-about p {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.footer-links a i {
+  margin-right: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.contact-info {
+  list-style: none;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.contact-info i {
+  margin-right: 12px;
+  margin-top: 3px;
+  color: #667eea;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  footer {
+    padding: 40px 0 0;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+}
+
+.tech-stack {
+  padding: 20px;
+}
+
+.tech-stack h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  background: #1c1c3b;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Kemungkinan kelas yang digunakan untuk navbar tetap */
+.ftco-navbar-light {
+  position: fixed; /* Membuat navbar tetap di layar */
+  top: 0; /* Menempel di bagian atas */
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999; /* Nilai z-index yang tinggi memastikan ia berada di atas konten lain */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opsional: menambahkan bayangan agar terlihat berbeda dari background */
+  /* Mungkin juga perlu menambahkan background-color yang solid agar tidak transparan */
+  background: #0c0a22; /* Sesuaikan dengan warna background gelap Anda */
+}
+
+.project .text h3 a,
+.project .text span {
+  color: #333333 !important; /* Gunakan !important jika ada gaya lain yang menimpa */
+}
